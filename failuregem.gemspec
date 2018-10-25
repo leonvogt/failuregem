@@ -1,12 +1,21 @@
+lib = File.expand_path("../lib", __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
 Gem::Specification.new do |s|
   s.name        = 'failuregem'
-  s.version     = '0.0.6'
-  s.date        = '2018-10-24'
+  s.version     = '0.0.8.2.5'
+  s.date        = '2018-10-25'
   s.summary     = "failuregem!"
-  s.description = "A simple Gem that includes everything you need to start with programming"
+  s.description = "A simple Gem that includes everything you need to start with Rails programming!"
   s.authors     = ["Leon Vogt"]
   s.email       = 'leon.vogt@bl.ch'
-  s.files       = ["lib/failuregem.rb"]
+
+  s.files       = Dir.chdir(File.expand_path('..', __FILE__)) do
+    `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  end
+  s.bindir        = "exe"
+  s.executables   = s.files.grep(%r{^bin/}) { |f| f[3..-1] }
+  s.require_paths = ["lib", "vendor"]
 
   s.add_runtime_dependency 'bootstrap', '~> 4.1.3', '>= 4.1.3'
   s.add_runtime_dependency 'jquery-rails', '~> 4.3', '>= 4.3.1'
@@ -16,4 +25,7 @@ Gem::Specification.new do |s|
 
   s.homepage    = 'http://rubygems.org/gems/failuregem'
   s.license     = 'MIT'
+
+  s.add_development_dependency "bundler", "~> 1.16"
+  s.add_development_dependency "rake", "~> 10.0"
 end

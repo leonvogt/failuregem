@@ -74,3 +74,7 @@ To do that you have to use the `bootstrap` option in the install generator, like
 ```console
 rails generate simple_form:install --bootstrap
 ```
+
+
+
+### Now you good to go!
