@@ -1,12 +1,9 @@
-lib = File.expand_path("../lib", __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-
 Gem::Specification.new do |s|
   s.name        = 'failuregem'
-  s.version     = '0.0.8.2.5'
+  s.version     = '0.0.9.1.9'
   s.date        = '2018-10-25'
   s.summary     = "failuregem!"
-  s.description = "A simple Gem that includes everything you need to start with Rails programming!"
+  s.description = "A simple Gem that includes everything you need to start with Rails programming! :)"
   s.authors     = ["Leon Vogt"]
   s.email       = 'leon.vogt@bl.ch'
 
