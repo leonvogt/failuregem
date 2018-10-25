@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'failuregem'
-  s.version     = '0.0.9.1.9'
+  s.version     = '0.0.9.2'
   s.date        = '2018-10-25'
   s.summary     = "failuregem!"
   s.description = "A simple Gem that includes everything you need to start with Rails programming! :)"
