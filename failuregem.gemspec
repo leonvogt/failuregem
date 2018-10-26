@@ -1,18 +1,15 @@
 Gem::Specification.new do |s|
   s.name        = 'failuregem'
-  s.version     = '0.0.9.2.2'
+  s.version     = '0.0.9.2.9'
   s.date        = '2018-10-25'
   s.summary     = "failuregem!"
   s.description = "A simple Gem that includes everything you need to start with Rails programming! :)"
   s.authors     = ["Leon Vogt"]
   s.email       = 'leon.vogt@bl.ch'
 
-  s.files       = Dir.chdir(File.expand_path('..', __FILE__)) do
-    `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  end
-  s.bindir        = "bin"
-  s.executables   = s.files.grep(%r{^bin/}) { |f| f[3..-1] }
-  s.require_paths = ["lib", "vendor"]
+  s.files        = `git ls-files`.split("\n")
+  s.executables  = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
+  s.require_path = 'lib'
 
   s.add_runtime_dependency 'bootstrap', '~> 4.1.3', '>= 4.1.3'
   s.add_runtime_dependency 'jquery-rails', '~> 4.3', '>= 4.3.1'
