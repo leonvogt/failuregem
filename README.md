@@ -1,5 +1,6 @@
 FAILURE-GEM
 ============
+TODO: Update README with font-awesome-rails, devise, cancancan, rails_admin, devise_cas_authenticatable
 
 This is the Repository for the Failuregem.
 

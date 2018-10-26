@@ -19,6 +19,11 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'simple_form', '~> 4.0', '>= 4.0.1'
   s.add_runtime_dependency 'paperclip', '~> 6.1', '>= 6.1'
   s.add_runtime_dependency 'active_link_to', '~> 1.0', '>= 1.0.5'
+  s.add_runtime_dependency 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
+  s.add_runtime_dependency 'devise', '~> 4.5', '>= 4.5'
+  s.add_runtime_dependency 'devise_cas_authenticatable', '~> 1.10', '>= 1.10.3'
+  s.add_runtime_dependency 'cancancan', '~> 2.3', '>= 2.3'
+  s.add_runtime_dependency 'rails_admin', '~> 1.4', '>= 1.4.2'
 
   s.homepage    = 'http://rubygems.org/gems/failuregem'
   s.license     = 'MIT'
