@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
   s.name        = 'failuregem'
-  s.version     = '0.0.9.3.7'
+  s.version     = '0.0.9.5'
   s.date        = '2018-11-02'
   s.summary     = "failuregem!"
-  s.description = "A simple Gem that includes everything you need to start with Rails programming! :)"
+  s.description = "A simple Gem that includes everything you need to start right away with Rails programming! :) Please Check the documentation"
   s.authors     = ["Leon Vogt"]
   s.email       = 'leon.vogt@bl.ch'
   s.homepage    = 'https://github.com/non1ckname/failuregem'
