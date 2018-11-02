@@ -34,9 +34,9 @@ bundle install
 
 Run the following command to install -/ configure all included GEMs:
 ```console
-rails generate simple_form:install --bootstrap
-rails generate devise:install
-rails generate devise User
+rails g simple_form:install --bootstrap
+rails g devise:install
+rails g devise User
 rails g cancan:ability
 rails g rails_admin:install
 ```
