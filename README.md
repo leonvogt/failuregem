@@ -32,9 +32,8 @@ bundle install
 
 ## Install all GEMs
 
+Run the following command to install -/ configure all included GEMs:
 ```console
-// Run the following command to install -/ configure all included GEMs:
-
 rails generate simple_form:install --bootstrap
 rails generate devise:install
 rails generate devise User
@@ -42,8 +41,8 @@ rails g cancan:ability
 rails g rails_admin:install
 ```
 
+Import GEMs in application.scss
 ```scss
-// Import GEMs in application.scss
 @import "bootstrap";
 @import "font-awesome";
 ```
