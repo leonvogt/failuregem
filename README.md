@@ -74,6 +74,7 @@ rails generate simple_form:install --bootstrap
 
 ### Paperclip
 For using **Paperclip** please use the official [documentation](https://github.com/thoughtbot/paperclip)
+
 ---
 
 ### Font-Awesome
