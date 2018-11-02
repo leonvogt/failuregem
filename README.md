@@ -2,10 +2,8 @@ FAILURE-GEM
 ============
 This is the Repository for the [Failuregem](https://rubygems.org/gems/failuregem "Rubygems.org").
 
-**Failuregem** aims to be a timesafer for railsapps.  It includes couple of usefull Gems to start rightaway with Rails programming.
-**Failuregem** Includes following GEMs:
-
-
+**Failuregem** aims to be a timesafer for railsapps. Why should you copy&paste all the usefull GEMs in your Gemfile every time you start a new App?!
+**Failuregem** Includes couple of usefull Gems to start rightaway with Rails programming:
 
 - [Bootstrap](#Bootstrap)
 - [Jquery-rails](#Bootstrap)
@@ -30,8 +28,7 @@ Run the following command to install it:
 ```console
 bundle install
 ```
-
-Finally done!
+---
 
 ### Bootstrap
 
@@ -64,8 +61,7 @@ the concatenated `bootstrap` for faster compilation:
 //= require popper
 //= require bootstrap
 ```
-
-
+---
 
 ### Simple-Form
 **Simple Form** can be easily integrated to the [Bootstrap](http://getbootstrap.com/).
@@ -74,10 +70,11 @@ To do that you have to use the `bootstrap` option in the install generator, like
 ```console
 rails generate simple_form:install --bootstrap
 ```
+---
 
 ### Paperclip
 For using **Paperclip** please use the official [documentation](https://github.com/thoughtbot/paperclip)
-
+---
 
 ### Font-Awesome
 To include the newest **Font-Awesome** you have to import to your application.scss
@@ -85,7 +82,7 @@ To include the newest **Font-Awesome** you have to import to your application.sc
 ```scss
 @import "font-awesome";
 ```
-
+---
 
 ### Devise
 To install **Devise** you still have to load the installer
@@ -98,7 +95,7 @@ In the following command you will replace `MODEL` with the class name used for t
 ```console
 rails generate devise MODEL
 ```
-
+---
 
 ### CanCanCan
 To install **CanCanCan** you still have to load the installer
@@ -107,7 +104,7 @@ To install **CanCanCan** you still have to load the installer
 rails g cancan:ability
 ```
 See [Defining Abilities](https://github.com/CanCanCommunity/cancancan/wiki/defining-abilities) for details.
-
+---
 
 ### RailsAdmin
 To install **RailsAdmin** you still have to load the installer
@@ -117,10 +114,10 @@ rails g rails_admin:install
 ```
 Provide a namespace for the routes when asked
 Start a server `rails s` and administer your data at [/admin](http://localhost:3000/admin). (if you chose default namespace: /admin)
-
+---
 
 ### ActiveLinkTo
 For using **ActiveLinkTo** please use the official [documentation](https://github.com/comfy/active_link_to)
-
+---
 
 ### Now you good to go!
