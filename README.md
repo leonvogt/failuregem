@@ -1,13 +1,20 @@
 FAILURE-GEM
 ============
-This is the Repository for the Failuregem.
+This is the Repository for the [Failuregem](https://rubygems.org/gems/failuregem "Rubygems.org").
 
 **Failuregem** aims to be a timesafer for railsapps.  It includes couple of usefull Gems to start rightaway with Rails programming.
 **Failuregem** Includes following GEMs:
 
-* Bootstrap
-* Jquery-rails
-* Simple-Form
+
+
+- [Bootstrap](#Bootstrap)
+- [Jquery-rails](#Bootstrap)
+- [Simple-Form](#Simple-Form)
+- [RDocs](#rdocs)
+- [Example applications](#example-applications)
+- [Extensions](#extensions)
+- [Contributing](#contributing)
+
 * Paperclip
 * Devise
 * Devise CAS
@@ -67,8 +74,7 @@ the concatenated `bootstrap` for faster compilation:
 
 
 
-### Simple Form
-
+### Simple-Form
 **Simple Form** can be easily integrated to the [Bootstrap](http://getbootstrap.com/).
 To do that you have to use the `bootstrap` option in the install generator, like this:
 
@@ -78,18 +84,15 @@ rails generate simple_form:install --bootstrap
 
 
 ### Font-Awesome
-
-**Failuregem** has the newest Font-Awesome version included but you still have to import it to your application.scss
+To include the newest **Font-Awesome** you have to import to your application.scss
 
 ```scss
-// Import Bootstrap in application.scss
 @import "font-awesome";
 ```
 
 
 ### Devise
-
-**Failuregem** has the newest Devise version included but you still have to load the installer
+To install **Devise** you still have to load the installer
 
 ```console
 rails generate devise:install
@@ -102,11 +105,8 @@ rails generate devise MODEL
 
 
 ### CanCanCan
-**Failuregem** has the newest CanCanCan version included but you still have to load the installer
+To install **CanCanCan** you still have to load the installer
 
-### 1. Define Abilities
-
-User permissions are defined in an `Ability` class.
 ```console
 rails g cancan:ability
 ```
@@ -114,9 +114,8 @@ See [Defining Abilities](https://github.com/CanCanCommunity/cancancan/wiki/defin
 
 
 ### RailsAdmin
-**Failuregem** has the newest Rails_admin version included but you still have to load the installer
+To install **RailsAdmin** you still have to load the installer
 
-## Installation
 ```console
 rails g rails_admin:install
 ```
