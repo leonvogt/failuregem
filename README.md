@@ -10,19 +10,12 @@ This is the Repository for the [Failuregem](https://rubygems.org/gems/failuregem
 - [Bootstrap](#Bootstrap)
 - [Jquery-rails](#Bootstrap)
 - [Simple-Form](#Simple-Form)
-- [RDocs](#rdocs)
-- [Example applications](#example-applications)
-- [Extensions](#extensions)
-- [Contributing](#contributing)
-
-* Paperclip
-* Devise
-* Devise CAS
-* CanCanCan
-* Font-Awesome-Rails
-* RailsAdmin
-* Active_link_to
-
+- [Paperclip](#Paperclip)
+- [Devise](#Devise)
+- [Devise CAS](#Devise)
+- [Font-Awesome-Rails](#Font-Awesome)
+- [RailsAdmin](#RailsAdmin)
+- [Active_link_to](#Active_link_to)
 
 ## Installation
 
@@ -82,6 +75,9 @@ To do that you have to use the `bootstrap` option in the install generator, like
 rails generate simple_form:install --bootstrap
 ```
 
+### Paperclip
+For using **Paperclip** please use the official [documentation](https://github.com/thoughtbot/paperclip)
+
 
 ### Font-Awesome
 To include the newest **Font-Awesome** you have to import to your application.scss
@@ -121,6 +117,10 @@ rails g rails_admin:install
 ```
 Provide a namespace for the routes when asked
 Start a server `rails s` and administer your data at [/admin](http://localhost:3000/admin). (if you chose default namespace: /admin)
+
+
+### ActiveLinkTo
+For using **ActiveLinkTo** please use the official [documentation](https://github.com/comfy/active_link_to)
 
 
 ### Now you good to go!
