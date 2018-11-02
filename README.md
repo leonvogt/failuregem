@@ -105,6 +105,7 @@ To install **CanCanCan** you still have to load the installer
 rails g cancan:ability
 ```
 See [Defining Abilities](https://github.com/CanCanCommunity/cancancan/wiki/defining-abilities) for details.
+
 ---
 
 ### RailsAdmin
@@ -115,10 +116,12 @@ rails g rails_admin:install
 ```
 Provide a namespace for the routes when asked
 Start a server `rails s` and administer your data at [/admin](http://localhost:3000/admin). (if you chose default namespace: /admin)
+
 ---
 
 ### ActiveLinkTo
 For using **ActiveLinkTo** please use the official [documentation](https://github.com/comfy/active_link_to)
+
 ---
 
 ### Now you good to go!
