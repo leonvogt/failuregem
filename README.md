@@ -1,21 +1,21 @@
 FAILURE-GEM
 ============
-TODO: Update README with font-awesome-rails, devise, cancancan, rails_admin, devise_cas_authenticatable
-
 This is the Repository for the Failuregem.
 
-**Failuregem** aims to be a timesafer for railsapp.  It includes couple of usefull Gems to start rightaway with Rails programming.
-**Failregem** Includes following GEMs:
+**Failuregem** aims to be a timesafer for railsapps.  It includes couple of usefull Gems to start rightaway with Rails programming.
+**Failuregem** Includes following GEMs:
 
 * Bootstrap
 * Jquery-rails
 * Simple-Form
 * Paperclip
+* Devise
+* Devise CAS
+* CanCanCan
+* Font-Awesome-Rails
+* RailsAdmin
 * Active_link_to
 
-
-INFO: This GEM use every App on [Failure.bl.ch](http://failure.bl.ch/)
-, if you programm a new Rails App for Failure please use this GEM.
 
 ## Installation
 
@@ -35,7 +35,7 @@ Finally done!
 
 ### Bootstrap
 
-**Failuregem** has the newest Bootstrap version included but you have still import it to your application.scss
+**Failuregem** has the newest Bootstrap version included but you still have to import it to your application.scss
 To do that you have to rewrite application.css to application.scss
 
 ```console
@@ -76,6 +76,52 @@ To do that you have to use the `bootstrap` option in the install generator, like
 rails generate simple_form:install --bootstrap
 ```
 
+
+### Font-Awesome
+
+**Failuregem** has the newest Font-Awesome version included but you still have to import it to your application.scss
+
+```scss
+// Import Bootstrap in application.scss
+@import "font-awesome";
+```
+
+
+### Devise
+
+**Failuregem** has the newest Devise version included but you still have to load the installer
+
+```console
+rails generate devise:install
+```
+In the following command you will replace `MODEL` with the class name used for the application’s users (it’s frequently `User` but could also be `Admin`). This will create a model (if one does not exist) and configure it with the default Devise modules. The generator also configures your `config/routes.rb` file to point to the Devise controller.
+
+```console
+rails generate devise MODEL
+```
+
+
+### CanCanCan
+**Failuregem** has the newest CanCanCan version included but you still have to load the installer
+
+### 1. Define Abilities
+
+User permissions are defined in an `Ability` class.
+```console
+rails g cancan:ability
+```
+See [Defining Abilities](https://github.com/CanCanCommunity/cancancan/wiki/defining-abilities) for details.
+
+
+### RailsAdmin
+**Failuregem** has the newest Rails_admin version included but you still have to load the installer
+
+## Installation
+```console
+rails g rails_admin:install
+```
+Provide a namespace for the routes when asked
+Start a server `rails s` and administer your data at [/admin](http://localhost:3000/admin). (if you chose default namespace: /admin)
 
 
 ### Now you good to go!

@@ -9,4 +9,10 @@ require 'devise_cas_authenticatable'
 require 'cancancan'
 require 'rails_admin'
 
-require 'failuregem/rails/engine'
+module Failuregem
+  module Rails
+    class Engine < ::Rails::Engine
+      # Get rails to add app, lib, vendor to load path
+    end
+  end
+end

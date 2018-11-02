@@ -1,0 +1,281 @@
+$background-color: #fff
+$header-bg: #2C3E50
+$footer-bg: #edeff1
+$content-bg: #fff
+$gray-line: #eee
+$white1: #fff
+$white2: #fafafa
+$lightgray: #ECF0F1
+$black: #373737
+
+$gray1: #BDC3C7
+$gray2: #95A5A6
+$gray3: #7F8C8D
+$gray4: #6e8597
+
+$blue1: #3498DB
+$blue2: #2980B9
+$darkblue: #173580
+
+$turq1: #1ABC9C
+$turq2: #16A085
+
+$dark1: #34495E
+$dark2: #2C3E50
+
+$info1: #2980B9
+$info2: #3498DB
+$success1: #E1EDD8
+$success2: #2ECC71
+$warning1: #F39C12
+$warning2: #F1C40F
+$error1: #C0392B
+$error2: #E74C3C
+
+
+//---Devise flash messages---//
+
+.alert-error
+  background-color: #f2dede
+  border-color: #eed3d7
+  color: #b94a48
+  text-align: left
+
+.alert-alert
+  background-color: #f2dede
+  border-color: #eed3d7
+  color: #b94a48
+  text-align: left
+
+.alert-success
+  background-color: #dff0d8
+  border-color: #d6e9c6
+  color: #468847
+  text-align: left
+
+.alert-notice
+  background-color: #dff0d8
+  border-color: #d6e9c6
+  color: #468847
+  text-align: left
+
+
+//----GENERAL------------------//
+*
+  font-size: 16px
+
+html
+  //overflow: scroll
+
+img
+  border-radius: 4px !important
+
+.center
+  text-align: center
+  margin: 0 auto
+
+#main_container
+  margin-top: 12em
+
+h1, h1 a, h1 span, h1 span span
+  font-size: 36px !important
+
+h2, h2 a, h2 span, h2 span span
+  font-size: 30px !important
+
+h3, h3 a, h3 span, h3 span span
+  font-size: 24px !important
+
+h4, h4 a, h4 span, h4 span span
+  font-size: 20px !important
+
+h5, h5 a, h5 span, h5 span span
+  font-size: 18px !important
+
+h6, h6 a, h6 span, h6 span span
+  font-size: 16px !important
+
+//----HEADER & NAVIGATION-----//
+
+.navbar-default, .navbar-header, .navbar-collapse, .header, .navbar-light
+  background-color: $header-bg
+.navbar
+  height: 8em
+
+.navbar-brand
+  padding-left: 0px !important
+  //margin: 29px 0px 0px 0px
+
+.nav-item
+  padding: 0px !important
+  margin: 2em
+  font-size: 14px
+  color: $white1 !important
+  &:hover
+    color: $turq1 !important
+
+.active
+  .nav-item
+    background-color: $header-bg !important
+    color: $turq1 !important
+
+.nav-item .active
+  border-bottom: 1px solid !important
+
+.navbar-toggler
+  margin: 42px 20px 0px 0px !important
+  height: 28px
+  padding: 2px 9px !important
+  i
+    font-size: 15px
+    color: $white1
+
+.navbar-toggler-icon
+  color: $white1 !important
+  margin-top: -2em
+
+//----CUSTOM NAV-----------//
+.sub-nav
+  height: 100%
+
+.sub-pages-nav
+  //float: left
+  //position: fixed
+  margin-top: 10px
+  margin-bottom: 55px
+  width: 100% !important
+  height: 27px !important
+  overflow: hidden
+
+  li
+    display: inline
+    margin-right: 20px
+
+.custom-nav
+  width: 100% !important
+  display: inline
+  margin-left: 0px !important
+  padding-left: 0px !important
+  text-decoration: none
+  list-style-type: none
+  margin-right: 10px !important
+
+  li
+    margin-bottom: 20px !important
+    border-bottom: 1px solid $white1 !important
+    color: $turq1 !important
+  a
+    font-size: 15px
+
+  .active
+    border-bottom: 1px solid $turq1 !important
+
+//----STARTPAGE------------//
+
+.carousel-title a
+  color: $white1 !important
+  font-size: 25px
+  text-decoration: none
+
+  &:hover
+    color: $gray1 !important
+    text-decoration: none
+
+.carousel-control .glyphicon
+  color: $white1
+
+//----NEWS----------------//
+
+.news
+  height: 250px
+  overflow: hidden
+
+//----PAGES--------------//
+
+a[class=""], .link
+  color: $turq1 !important
+  &:hover
+    color: $turq2 !important
+    text-decoration: none !important
+
+body
+  color: $black !important
+
+.dashboard-content
+  border-left: 1px solid $gray1 !important
+
+.page-content
+  border-left: 1px solid $gray1 !important
+
+
+//----BUTTONS------------//
+
+.btn-primary
+  background-color: $turq1 !important
+  border-color: $turq1 !important
+  color: $white1 !important
+
+//----TABLES-------------//
+
+.cut-td-text
+  max-height: 25px !important
+  overflow: hidden !important
+
+//----PAGINATION---------//
+
+.pagination
+  .active
+    span
+      background-color: $white1 !important
+      color: $black !important
+      border: 1px solid $turq1 !important
+
+//----PROGRESS BAR-------//
+
+.progress-info-green
+  float: left
+  width: 20px
+  height: 20px
+  border-radius: 100%
+  background-color: #5cb85c
+  margin-right: 7px
+
+.progress-info-blue
+  float: right
+  width: 20px
+  height: 20px
+  border-radius: 100%
+  background-color: #5bc0de
+  margin-right: 7px
+
+//----CHART BOX----------//
+
+//.chart
+
+//----FOOTER-------------//
+
+.footer
+  height: 135px
+  margin-top: 40px
+  padding: 40px 20px
+  background-color: #edeff1
+  color: #bdc3c7
+  text-align: center
+
+.footer-div
+  border-top: solid 1px $gray1
+  background-color: $white1
+  height: 90px
+  padding: 10px 0px
+
+.footer-link
+  &:hover
+    text-decoration: none
+
+.bl-logo
+  width: 220px
+  margin-left: 4em
+
+.divider
+  height: 150px
+  width: 100%
