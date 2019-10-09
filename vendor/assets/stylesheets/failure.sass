@@ -1,23 +1,24 @@
+$navbar-background-color: #0f4e40
 $background-color: #fff
 $header-bg: #2C3E50
-$footer-bg: #edeff1
+
 $content-bg: #fff
-$gray-line: #eee
 $white1: #fff
 $white2: #fafafa
-$lightgray: #ECF0F1
-$black: #373737
+$black: #0e0e0e
 
 $gray1: #BDC3C7
 $gray2: #95A5A6
 $gray3: #7F8C8D
 $gray4: #6e8597
+$gray-line: #eee
+$lightgray: #ECF0F1
 
 $blue1: #3498DB
 $blue2: #2980B9
 $darkblue: #173580
 
-$turq1: #1ABC9C
+$turq1: #1c9076
 $turq2: #16A085
 
 $dark1: #34495E
@@ -34,8 +35,9 @@ $error2: #E74C3C
 $primary: #2C3E50
 $seccond: #1ABC9C
 
-//---Devise flash messages---//
 
+
+//---Devise flash messages---//
 .alert-error
   background-color: #f2dede
   border-color: #eed3d7
@@ -67,6 +69,9 @@ $seccond: #1ABC9C
 
 html
   //overflow: scroll
+
+body
+  background-image: url('failure_bg.png')
 
 img
   border-radius: 4px !important
@@ -107,10 +112,10 @@ a
         color: $turq2
 
 .btn-primary
-  background-color: $turq1
+  background-color: $navbar-background-color
   border: none
   &:hover, &:active, &:focus, &:active:focus, &:active:hover
-    background-color: $turq2
+    background-color: $navbar-background-color
 
 .inactive_user
   color: $gray1
@@ -125,7 +130,7 @@ a
 //----HEADER & NAVIGATION-----//
 
 .navbar-default, .navbar-header, .navbar-collapse, .header, .navbar-light
-  background-color: $header-bg
+  background-color: $navbar-background-color
 .navbar
   height: 8em
 
@@ -172,7 +177,7 @@ nav a:hover
   font-size: 30px
 
 #subtitle
-  color: $turq1
+  color: $black
   font-size: 30px
 
 #navigation
@@ -258,8 +263,8 @@ body
 //----BUTTONS------------//
 
 .btn-primary
-  background-color: $turq1 !important
-  border-color: $turq1 !important
+  background-color: $navbar-background-color !important
+  border-color: $navbar-background-color !important
   color: $white1 !important
 
 //----TABLES-------------//
@@ -306,7 +311,7 @@ body
   height: 135px
   margin-top: 40px
   padding: 40px 20px
-  background-color: #edeff1
+  background-image: url('failure_bg.png')
   color: #bdc3c7
   text-align: center
 
